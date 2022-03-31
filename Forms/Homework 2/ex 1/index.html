@@ -8,58 +8,46 @@
     <title>Document</title>
     <style>
         table,
+        th,
         td {
-            border: 2px solid black;
+          border: 2px solid black;
         }
-
+  
         form,
         fieldset {
-            border: 0;
+          border: 0;
         }
     </style>
-</head>
-
-<body>
-    <form action="" method="post">
+    </head>
+    <body>
+        <form action="" method="post">
         <fieldset>
-            <table>
+        <table>
+            <tr>
+                <th colspan="2"><label for="sign in">Sign In</label></th>
+            </tr>
+            <tr>
+                <td><label for="email">Email address</label></td>
+            <br />
+            <td><input type="email" name="email" id="" /></td>
+<br />
+</tr>
 
-                <tr>
-                    <th colspan="2"><label for="sign in">Sign In</label></th>
-                </tr>
-                <tr>
-                    <td><label for="email">Email address</label></td>
-                    <br>
-                    <td><input type="email" name="email" id="" /></td>
-                    <br>
-                </tr>
-                <tr>
-                    <br>
-                    <td><label for="password">Password</label></td>
-                    <td><input type="password" name="password" /></td>
-                    <br>
+            <tr>
+            <br />
+            <td><label for="password">Password</label></td>
+            <td><input type="password" name="password" /></td>
 
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center;">
-                        <button type="submit">Sign In</button>
-                    </td>
+            <br />
+            </tr>
 
-                </tr>
-
-
-
-
-
-
-            </table>
-
+            <tr>
+            <td colspan="2" style="text-align: center">
+                <button type="submit">Submit</button>
+            </td>
+            </tr>
+        </table>
         </fieldset>
-
-
-
-
-
     </form>
 </body>
 

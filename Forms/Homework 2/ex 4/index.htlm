@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4</title>
+
+    <style>
+      table th {
+        background-color: #de8704;
+        color: #d6c825;
+        font-size: 24px;
+      }
+
+      .green {
+        background-color: #62af5e;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .peachy {
+        background-color: #d9544f;
+        color: white;
+        border-radius: 5px;
+      }
+
+      table {
+        background-color: #222536;
+        color: #d6c825;
+        margin: 0;
+        display: inline-block;
+      }
+
+      fieldset {
+        border: 0;
+        line-height: 2em;
+      }
+
+      form {
+        width: 550px;
+        height: 450px;
+        margin: auto;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <table>
+          <tr>
+            <th colspan="2" style="text-align: left">Sign up</th>
+          </tr>
+
+          <tr>
+            <td><label for="name">First Name:</label></td>
+            <td>
+              <input type="text" name="name" placeholder="Enter First Name" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="lastname">Last Name</label></td>
+            <td>
+              <input
+                type="lastname"
+                name="lastname"
+                placeholder="Enter Last Name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>> <label for="date">Date of birth</label></td>
+            <td><input type="date" name="date" /></td>
+          </tr>
+          <tr>
+            <td><label for="gende">Gender</label></td>
+
+            <td>
+              <input type="radio" name="male" id="" />
+
+              <label for="male">Male</label>
+
+              <input type="radio" name="female" />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="Country">Country</label></td>
+            <td>
+              <select name="country" id="">
+                <option value="Country">Country</option>
+                <option value="England">England</option>
+                <option value="France">France</option>
+                <option value="Belgium">Belgium</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email here"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone</label></td>
+            <td><input type="text" name="name" placeholder="Enter phone" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" name="password " /></td>
+          </tr>
+
+          <tr>
+            <td><label for="cpas">Confirm Password</label></td>
+            <td><input type="password" name="cpas" /></td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="text-align: right">
+              <input type="checkbox" name="checkbox" id="" />
+              <label for="checkbox">I Agree to the Terms of use</label>
+            </td>
+          </tr>
+
+          <div class="buttons">
+            <tr style="background-color: #de8704">
+              <td colspan="2" style="text-align: right">
+                <button type="submit" class="green">Submit</button>
+                <button type="cancel" class="peachy">Cancel</button>
+              </td>
+            </tr>
+          </div>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
