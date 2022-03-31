@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid black;
+            margin-right: 25px;
+        }
+
+        table th {
+            font-size: 25px;
+            color: red;
+            background-color: lightgoldenrodyellow;
+            border: 0.5px solid black;
+        }
+
+        table td {
+            background-color: lightskyblue;
+            border: 0.5px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <th style="text-align: center" colspan="2">Registration Form</th>
+            </tr>
+
+            <tr>
+                <td><label for="name">Enter Name</label></td>
+                <td><input type="name" name="name" id="" /></td>
+            </tr>
+            <tr>
+                <td><label for="password">Enter Password</label></td>
+                <td><input type="password" name="password" id="" /></td>
+            </tr>
+            <tr>
+                <td><label for="address">Enter Address</label></td>
+                <td>
+                    <textarea name="address" id="" cols="20" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="select game">Select Game</label></td>
+                <td>
+                    <input type="checkbox" name="checkbox" />
+                    <label for="checkbox">Hockey</label><br />
+
+                    <input type="checkbox" name="checkbox" />
+                    <label for="checkbox">Football</label><br />
+
+                    <input type="checkbox" name="checkbox" />
+                    <label for="checkbox">Badmington</label><br />
+
+                    <input type="checkbox" name="checkbox" />
+                    <label for="checkbox">Cricket</label><br />
+
+                    <input type="checkbox" name="checkbox" />
+                    <label for="checkbox">Volleyball</label><br />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <input type="radio" name="male" />
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="female" />
+                    <label for="female">Male</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="age">Select ur age</label></td>
+                <td>
+                    <select name="age" id="">
+                        <option value="select" selected>Select</option>
+                        <option value="5-15">5-15</option>
+                        <option value="15-18">15-18</option>
+                        <option value="18+">18+</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="photo">Select photo</label></td>
+
+                <td>
+                    <input type="file" name="file" id="" placeholder="Choose a file" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" style="text-align: center">
+                    <button type="button">Click me</button>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit Form</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
