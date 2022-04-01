@@ -1,57 +1,120 @@
-body, header, nav, main, footer, h1, div, img {
+/* Place your comment here */
+/*
+Autor: Maja Bravo
+Data :31.03.2022 
+File Name: styles.css 
+*/
+
+/*CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+h1,
+ul,
+div,
+img {
     margin: 0;
     padding: 0;
     border: 0;
 }
-
+/*Style rules for body and images*/
 body {
-    background-color: #ccc;
+    background-color: #000;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    
+    /* Style rules for mobile viewport */
+    /* Style rule for header*/
+    header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: #000;
+        height: 190px;
+        z-index: 1;
+        }
+        
+        header img {
+            margin: 0 auto;
+        }
+        /*Style for rules for navigation area*/
+        nav {
+            padding: 1%;
+            margin-bottom: 1%;
+        
+        }
+            nav ul {
+                list-style-type: none;
+                text-align: center;
+                }
+            
+            nav li {
+                font-size: 1.5em;
+                font-family: 'Francois One',
+                serif;
+                border-top: 1px solid #fff;
+                }
+                
+                nav li:first-child {
+                    border-top: none;
+                }
+                
+                nav li a {
+                    display: block;
+                    color: #fff;
+                padding: 0.5em 1em;
+                text-decoration: none;
+                }
+                
+                /*Show mobile class,hide tablet-desktop class */
+                .mobile {
+                    display: block;
+                }
+                
+                .tablet-desktop {
+                    display: none;
+                }
+                
+                /*Style rules for main content*/
+                main {
+                    background-color: #fff;
+                    padding: 2%;
+                    font-size: 1.15em;
+                    font-family: 'Roboto Slab',
+                        serif;
+                }
+                
+                .tel-link {
+                    background-color: #404040;
+                    padding: 2%;
+                    margin: 0 auto;
+                    width: 80%;
+                    text-align: center;
+                    border-radius: 5px;
 }
-header {
-
-    float: left;
-    width: 25%;
-}
-nav {
-    float: right;
-    margin: 5em 3em 0 0;
-    width: 70%;
-
-}
-main {
-    clear: left;
-    background-color: #fff;
-    padding: 2%;
-    font-size: 1.25em;
-}
-h1 {
-text-align: center;
-
-}
-#container {
- width: 80%;
- margin: 0 auto;   
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: right;
-}
-nav li {
-    display: inline-block;
-    font-size: 1.75em;
-}
-nav li a {
-    display: block;
+.tel-link a {
     color: #fff;
-    text-align: center;
-    padding: 0.5em 1em;
     text-decoration: none;
-}
-img {
-    max-width: 100%;
+    font-size: 1.5em;
     display: block;
+}
+.hours {
+    margin-left: 10%;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
 }
 #hero {
     clear: both;
@@ -63,6 +126,7 @@ position: relative;
     position: absolute;
     margin-left: 30px;
 }
+/*Style rules for footer content*/
 footer p {
     font-size: 0.75em;
     text-align: center;
@@ -73,12 +137,16 @@ footer p a {
     color: #fff;
     text-decoration: none;
 }
-#weights, #cardio, #training {
-    width: 29%;
-    float: left;
+#weights,
+#cardio,
+#training {
     margin: 0 2%;
 }
-#exercises {
+.round {
+    border-radius: 8px;
+}
+
+/* #exercises {
     clear: left;
     border-top: 1px solid #000;
     background-color: #f2f2f2;
@@ -90,10 +158,11 @@ footer p a {
 #exercises dd {
     padding: 0.5% 1% 2% 0;
 }
+*/
 #contact {
     text-align: center;
 }
-#contact a {
+#contact .contact-email-link {
     color:#666600;
     text-decoration: none;
 }
@@ -108,5 +177,7 @@ footer p a {
     text-decoration: none;
 }
 .map {
-    border: 8px solid #000;
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
 }
