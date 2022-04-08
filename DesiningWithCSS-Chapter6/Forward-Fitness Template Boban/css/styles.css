@@ -1,8 +1,7 @@
-/* Place your comment here */
-/*
-Autor: Maja Bravo
-Data :31.03.2022 
-File Name: styles.css 
+/* 
+Author: Boban Srezovski
+Data: 31.03.2022
+File Name: styles.css
 */
 
 /* CSS Reset */
@@ -25,10 +24,12 @@ aside {
     padding: 0;
     border: 0;
 }
+
 /* Style rule for box sizing applies for all elements */
 * {
     box-sizing: border-box;
 }
+
 /* Style rules for body and images */
 body {
     background-color: #000;
@@ -40,6 +41,7 @@ img {
 }
 
 /* Style rules for mobile viewport */
+
 /* Style rule for header */
 header {
     top: 0;
@@ -65,8 +67,7 @@ nav ul {
 nav ul li {
     font-size: 1.5em;
     /* font-family: 'Roboto Slab', serif; */
-    font-family: 'Francois one',
-    serif;
+    font-family: 'Francois one', serif;
     border-top: 1px solid #fff;
 }
 
@@ -85,6 +86,7 @@ nav ul li a:hover {
     color: #000;
     background-color: #fff;
 }
+
 /* Show mobile class, hide tablet-desctop class */
 .mobile {
     display: block;
@@ -99,44 +101,43 @@ main {
     background-color: #fff;
     padding: 2%;
     font-size: 1.15em;
-    font-family: 'Roboto Slab',
-    serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .mobile h3 {
     text-shadow: 5px 5px 8px #ccc;
-    }
-    
-    article {
-        padding: 2%;
-    }
-    
-    article h3 {
-        text-align: center;
-    }
-    
-    article img {
-        margin: 0 auto;
-    }
-    
-    article ul {
-        margin-left: 10%;
-    }
-    
-    article:nth-of-type(2) {
-        background-color: rgba(204, 204, 204, 0.3);
-    }
-    
-    aside {
-        text-align: center;
-        font-size: 1.25;
-        font-style: italic;
-        font-weight: bold;
-        padding: 2%;
-        background-color: rgba(204, 204, 204, 0.5);
-        box-shadow: 5px 5px 8px #000;
-        text-shadow: 5px 5px 5px #b3b3b3;
-        border-radius: 0 15px;
+}
+
+article {
+    padding: 2%;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article img {
+    margin: 0 auto;
+}
+
+article ul {
+    margin-left: 10%;
+}
+
+article:nth-of-type(2) {
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
+aside {
+    text-align: center;
+    font-size: 1.25;
+    font-style: italic;
+    font-weight: bold;
+    padding: 2%;
+    background-color: rgba(204, 204, 204, 0.5);
+    box-shadow: 5px 5px 8px #000;
+    text-shadow: 5px 5px 5px #b3b3b3;
+    border-radius: 0 15px;
 }
 
 .tel-link {
@@ -167,6 +168,7 @@ h1 {
     width: 80%;
     margin: 0 auto;
 }
+
 
 
 #hero {
@@ -254,12 +256,14 @@ footer p a {
     grid-column: 1 / span 3;
 }
 
+
 @media screen and (min-width: 680px) {
 
     /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
     .mobile {
         display: none;
     }
+
     .tablet-desktop {
         display: block;
     }
@@ -375,7 +379,8 @@ footer p a {
         opacity: 1;
         box-shadow: 8px 8px 10px #808080;
     }
-#waights,
+
+    #waights,
     #cardio,
     #training {
         width: 29%;
