@@ -1,41 +1,43 @@
 <!DOCTYPE html>
-<!--This website template was created by:Maja Bravo-->
+<!--This webiste template was created by:Maja Bravo-->
 <html lang="en">
 
 <head>
-    <title>Forward Fitness Club</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initialscale=1">
-<link rel="stylesheet" href="./css/styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300;400&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forward Fitness Club</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
 </head>
 
 <body>
     <div id="container">
-    
-<!--Mobile Nav-->
-<nav class="mobile-nav">
-    <div id="menu-links">
-        <a href="./index.html"> Home </a>
-        <a href="./about.html"> About us </a>
-        <a href="./classes.html"> Classes </a>
-        <a href="./nutrition.html"> Nutrition </a>
-        <a href="./contact.html"> Contact us </a>
-    </div>
-    <a class="menu-icon">
-        <div>&#9776;</div>
-    </a>
-</nav>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About us</a>
+                <a href="./classes.html">Classes</a>
+                <a href="./nutrition.html">Nutrition</a>
+                <a href="./contact.html">Contact Us</a>
+            </div>
+            <a class="menu-icon">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
         <!--Use the header area for the website name or logo-->
         <header id="ffc-logo">
             <a href="./index.html">
                 <img src="./images/forward-fitness-logo.png" alt="Forward Fitness Club Logo" />
             </a>
         </header>
-        <!-- Tablet,Desktop Nav -->
+
+        <!--Tablet, Desktop Nav-->
         <nav class="tablet-desktop">
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -45,25 +47,27 @@
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <!--Classes Hero Images-->
-        <div id="hero" class="tablet-desktop">
-            <img src="./images/hero-image.jpg" alt="hero image">
-        </div>
         <!--Use the main area to add the main content of the web page-->
         <main>
-        
-<section id="waights">
+
+            <section id="waights">
+
                 <h1>Weights</h1>
-                <img src="./images/people-with-weights.jpg" alt="Multiple people working out wiht weights" class="round" />
+
+                <img src="./images/people-with-weights.jpg" alt="Multiple people working out wiht weights"
+                    class="round" />
+
                 <p>Our facility includes a weight training area with several weight
                     options. Build lean muscle with weights and improve your core with
                     weight training.</p>
-                <ul class="tablet-desktop">
+
+                <ul class="arrow-bullets tablet-desktop">
                     <li>Dumbells</li>
-                    <li>Kettle Bells</li>
-                    <li>Barbells</li>
+                    <li>Kattle bells</li>
+                    <li>Barbe</li>
                 </ul>
             </section>
+
             <section id="cardio">
                 <h1>Cardio</h1>
                 <img src="./images/people-workingout-machines.jpg" alt="Cardio equipment" class="round" />
@@ -74,9 +78,10 @@
                 <ul class="tablet-desktop">
                     <li>Treadmills</li>
                     <li>Eliptical Machines</li>
-                    <li>Exercise Bikes</li>
+                    <li>Exercise bikes</li>
                 </ul>
             </section>
+
             <section id="training">
                 <h1>Personal training</h1>
                 <img src="./images/personal-trainer.jpg" alt="Personal Training" class="round" />
@@ -91,16 +96,16 @@
                     <li>Consistent Support and Motivation</li>
                 </ul>
             </section>
+
             <section id="exercises" class="tablet-desktop">
-            <h1>Common Exercises</h1>
                 <p>
                     The following are common exercises that we encourage our clients to
                     do as part of their daily exercise routine.
                 </p>
                 <dl>
-                    <dt>Burpees</dt>
+                    <dt>Burpes</dt>
                     <dd>
-                        Burpees are great, full body exercise to increase your strength and
+                        Burpes are great, full body exercise to increase your strength and
                         endurance. Begin in a standing position, drop into a squat and
                         extend your hands froward, kick your foot back and then forward
                         again quickly, and then jump up from a squatted position.
@@ -109,7 +114,7 @@
                     <dd>
                         Planks build your core strength. To perform a plank, get in a push
                         up position and rest your forearms on the floor. Hold the position
-                        as long as you can.
+                        as long as you can.<span class="viewex" onclick="plank()">View Example</span>
                     </dd>
                     <dt>Mountain Climber</dt>
                     <dd>
@@ -119,9 +124,15 @@
                         climbing a mountain).
                     </dd>
                 </dl>
+                <video controls id="example">
+                    <source id="vid-src" src="des" kind="desciptions" type="video/mp4" />
+                    <track id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions" />
+                    <p>Your browser does not support the video element</p>
+                </video>
                 <p>
                     For more information about how to stay active, visit
-                    <a href="https://www.hhs.gov/fitness/bc-active/index.html" target="_blank" class="external-link">fitness.gov</a>
+                    <a href="https://www.hhs.gov/fitness/bc-active/index.html" target="_blank"
+                        class="external-link">fitness.gov</a>
                 </p>
             </section>
         </main>
@@ -131,5 +142,9 @@
             <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
         </footer>
     </div>
+
+    <script src="./scripts/script.js"></script>
+
 </body>
+
 </html>
