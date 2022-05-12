@@ -20,3 +20,27 @@ let ime2={
 
 people.friends.push(ime1,ime2,ime3);
 console.log(people);
+ 
+
+let car = {
+    make:"Volkswagen",
+    model: "Audi",
+    color:"Gray",
+    AutomaticShift: true
+}
+   console.log(car);
+   car.tyre="winter";
+   car.windshild="glass";
+   car.color="green";
+
+   car.forSale=true;
+   console.log(car);
+
+   if (car.forSale) {
+       alert("Its for Sale");
+       
+   }else {
+       alert("Its not for sale");
+       
+   }
+
