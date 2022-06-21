@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS tester</title>
+    <style>
+        .white {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="output">Test</div>
+
+    <script>
+        let myHtmlObject = document.querySelector(".output");
+        console.dir(myHtmlObject);
+        if (myHtmlObject !== null) {
+            myHtmlObject.textContent = "Prviot promenet text";
+            myHtmlObject.classList.add("white");
+            myHtmlObject.id = "tester";
+            document.body.style.backgroundColor = "red";
+            myHtmlObject.textContent = document.URL;
+        }
+        console.dir(myHtmlObject);
+
+
+    </script>
+</body>
+
+</html>
